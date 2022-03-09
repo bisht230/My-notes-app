@@ -1,0 +1,19 @@
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 0.4rem;
+}
+
+.navbar-brand {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.user-notes {
+    margin-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1rem;
+}
