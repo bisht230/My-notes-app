@@ -70,7 +70,7 @@ searchTxtUser.addEventListener("input", function(){
     let inputVal = searchTxtUser.value.toLowerCase();
     let noteCards = document.getElementsByClassName('noteCard');
     Array.from(noteCards).forEach(function(element){
-        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
         if(cardTxt.includes(inputVal)){
             element.style.display = "block";
         }
