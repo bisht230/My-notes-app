@@ -64,19 +64,18 @@ function deleteNote(index) {
 }
 
 // for searching the element inside the search box 
-let searchTxt = document.getElementById('search');
-searchTxt.addEventListener('input', function () {
-    let inputVal = searchTxt.value.toLowerCase();
-    // console.log('fire',inputVal);
-    let noteCard = document.getElementsByClassName('noteCard');
-    Array.from(noteCard).forEach(function (element) {
-        let cardTxt = document.getElementsByTagName('p')[0].textContent;
-        // console.log(cardTxt);
-        if (cardTxt.includes(inputVal)) {
+let searchTxtUser = document.getElementById('searchTxt');
+searchTxtUser.addEventListener("input", function(){
+
+    let inputVal = searchTxtUser.value.toLowerCase();
+    let noteCards = document.getElementsByClassName('noteCard');
+    Array.from(noteCards).forEach(function(element){
+        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        if(cardTxt.includes(inputVal)){
             element.style.display = "block";
         }
-        else {
+        else{
             element.style.display = "none";
         }
     })
-});
+})
